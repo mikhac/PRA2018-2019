@@ -7,14 +7,14 @@
     <persistence-unit name="hibernate-dynamic" transaction-type="RESOURCE_LOCAL">
         <properties>
             <!-- Configuring JDBC properties -->
-            <property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:mem:PUBLIC;sql.syntax_ora=true"/>
-            <property name="javax.persistence.jdbc.user" value="sa"/>
-            <property name="javax.persistence.jdbc.password" value=""/>
-            <property name="javax.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/pracownia_programowania"/>
+            <property name="javax.persistence.jdbc.user" value="postgres"/>
+            <property name="javax.persistence.jdbc.password" value="zaq1@WSX"/>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
 
             <!-- Hibernate properties -->
-            <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>
-            <property name="hibernate.hbm2ddl.auto" value="validate"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
             <property name="hibernate.format_sql" value="false"/>
             <property name="hibernate.show_sql" value="true"/>
         </properties>
