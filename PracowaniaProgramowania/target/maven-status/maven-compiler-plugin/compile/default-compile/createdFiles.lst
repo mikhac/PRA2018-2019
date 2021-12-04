@@ -1,3 +1,4 @@
-hibernate\model\Employee.class
 hibernate\Manager.class
+hibernate\model\Employee.class
 hibernate\queries\Queries.class
+hibernate\model\Address.class
